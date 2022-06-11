@@ -13,7 +13,8 @@ const NavSectionStyled = styled.section`
   background: transparent;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  z-index: 10;
 
   .logo {
     display: flex;
@@ -89,6 +90,9 @@ const NavSectionStyled = styled.section`
         font-family: Roboto, sans-serif;
       }
     }
+  }
+
+  @media (max-width: 930px) {
   }
 `;
 
