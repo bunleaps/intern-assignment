@@ -25,6 +25,7 @@ const HomeSectionStyled = styled.section`
       width: 730px;
       height: 400px;
       z-index: 5;
+      cursor: pointer;
 
       .iconPlay {
         font-size: 150%;
@@ -34,7 +35,6 @@ const HomeSectionStyled = styled.section`
         height: 50px;
         padding: 10px;
         border-radius: 50%;
-        cursor: pointer;
       }
     }
 
@@ -73,13 +73,11 @@ function Home() {
           onClick={() => {
             setPlayVid(
               <iframe
-                className="unfpa-video__video"
-                id="unfpa-video-u-QkD-l7ByQ"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 title="YouTube video player"
                 width="640"
                 height="360"
-                src="https://www.youtube.com/embed/u-QkD-l7ByQ?rel=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.unfpa.org&amp;widgetid=1"
+                src="https://www.youtube.com/embed/u-QkD-l7ByQ??autoplay=1&mute=1"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               ></iframe>
             );
           }}
